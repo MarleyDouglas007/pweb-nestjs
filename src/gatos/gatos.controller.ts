@@ -1,14 +1,14 @@
 import { Controller, Get } from '@nestjs/common';
-import {Gatos} from 'src/gatos/de/gatos.interface';
+import {Gato} from 'src/gato/gato.interface';
 
 @Controller('gatos')
 export class GatosController {
 
 
- private readonly gatos: Gatos[] = [];
+ private readonly gatos: Gato[] = [];
 
  @Get()
- findAll(): Gatos[]{
+ findAll(): Gato[]{
     return this.gatos;
 
  }
